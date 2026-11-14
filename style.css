@@ -1,0 +1,163 @@
+
+    /* Custom Aurora & Glassmorphism Utilities (Light + Dark) */
+    body {
+      background-color: #ffffff;
+      color: #0f172a;
+      overflow-x: hidden;
+      transition: background-color 0.35s ease, color 0.35s ease;
+    }
+
+    html.dark body {
+      background-color: #050c09;
+      color: #f1f5f9;
+    }
+
+    .bg-grid-pattern {
+      background-size: 36px 36px;
+      background-image: 
+        linear-gradient(to right, rgba(16, 185, 129, 0.055) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(16, 185, 129, 0.055) 1px, transparent 1px);
+    }
+
+    html.dark .bg-grid-pattern {
+      background-image: 
+        linear-gradient(to right, rgba(52, 211, 153, 0.07) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(52, 211, 153, 0.07) 1px, transparent 1px);
+    }
+
+    .glass-card {
+      background: rgba(255, 255, 255, 0.72);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 1px solid rgba(52, 211, 153, 0.25);
+      box-shadow: 0 10px 40px -10px rgba(16, 185, 129, 0.08), 0 1px 3px rgba(15, 23, 42, 0.03);
+      transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .glass-card:hover {
+      background: rgba(255, 255, 255, 0.88);
+      border-color: rgba(16, 185, 129, 0.5);
+      box-shadow: 0 20px 50px -12px rgba(16, 185, 129, 0.16);
+      transform: translateY(-3px);
+    }
+
+    html.dark .glass-card {
+      background: rgba(11, 24, 19, 0.74);
+      border: 1px solid rgba(52, 211, 153, 0.18);
+      box-shadow: 0 12px 40px -10px rgba(0, 0, 0, 0.55);
+    }
+
+    html.dark .glass-card:hover {
+      background: rgba(15, 33, 26, 0.88);
+      border-color: rgba(52, 211, 153, 0.45);
+      box-shadow: 0 20px 50px -12px rgba(16, 185, 129, 0.2);
+    }
+
+    .aurora-gradient-text {
+      background: linear-gradient(135deg, #059669 0%, #10b981 45%, #34d399 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    html.dark .aurora-gradient-text {
+      background: linear-gradient(135deg, #34d399 0%, #6ee7b7 50%, #2dd4bf 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    /* Автоматическая адаптация светлых поверхностей и текста под Dark Aurora */
+    html.dark .text-slate-900 { color: #f8fafc; }
+    html.dark .text-slate-800 { color: #e2e8f0; }
+    html.dark .text-slate-700 { color: #cbd5e1; }
+    html.dark .text-slate-600 { color: #94a3b8; }
+    html.dark .text-slate-500 { color: #64748b; }
+    html.dark .text-emerald-800 { color: #a7f3d0; }
+    html.dark .text-emerald-700 { color: #6ee7b7; }
+    html.dark .text-emerald-600 { color: #34d399; }
+    html.dark .text-teal-800 { color: #99f6e4; }
+    html.dark .text-teal-700 { color: #5eead4; }
+    html.dark .text-green-800 { color: #bbf7d0; }
+    html.dark .text-amber-600 { color: #fbbf24; }
+
+    html.dark .bg-white,
+    html.dark .bg-white\/80,
+    html.dark .bg-white\/85,
+    html.dark .bg-white\/90 {
+      background-color: rgba(15, 32, 25, 0.85);
+    }
+
+    html.dark .bg-emerald-50,
+    html.dark .bg-emerald-50\/60,
+    html.dark .bg-emerald-50\/70,
+    html.dark .bg-emerald-50\/80,
+    html.dark .bg-emerald-50\/90,
+    html.dark .bg-teal-50,
+    html.dark .bg-green-50 {
+      background-color: rgba(16, 185, 129, 0.1);
+    }
+
+    html.dark .bg-emerald-100\/70,
+    html.dark .bg-emerald-100\/80,
+    html.dark .bg-teal-100\/80,
+    html.dark .bg-green-100\/80 {
+      background-color: rgba(16, 185, 129, 0.16);
+    }
+
+    html.dark .from-emerald-50\/80 {
+      --tw-gradient-from: rgba(16, 185, 129, 0.12);
+      --tw-gradient-to: rgba(15, 32, 25, 0.6);
+    }
+
+    html.dark .border-emerald-100,
+    html.dark .border-emerald-100\/80,
+    html.dark .border-emerald-200,
+    html.dark .border-emerald-200\/60,
+    html.dark .border-emerald-200\/70,
+    html.dark .border-emerald-200\/80,
+    html.dark .border-teal-200\/70,
+    html.dark .border-green-200\/70 {
+      border-color: rgba(52, 211, 153, 0.2);
+    }
+
+
+    ::-webkit-scrollbar { width: 8px; height: 6px; }
+    ::-webkit-scrollbar-track { background: #f2fbf7; }
+    ::-webkit-scrollbar-thumb { background: #a7f3d0; border-radius: 9999px; }
+    ::-webkit-scrollbar-thumb:hover { background: #34d399; }
+
+    html.dark ::-webkit-scrollbar-track { background: #050c09; }
+    html.dark ::-webkit-scrollbar-thumb { background: #134e3a; }
+    html.dark ::-webkit-scrollbar-thumb:hover { background: #10b981; }
+    
+    html.dark .bg-white\/70 {
+  background-color: rgba(11, 24, 19, 0.8);
+}
+
+html.dark .bg-emerald-200\/90 {
+  background-color: rgba(16, 185, 129, 0.28);
+}
+/* Анимация круговой волны при смене темы */
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation: none;
+  mix-blend-mode: normal;
+}
+
+::view-transition-new(root) {
+  z-index: 9999;
+}
+
+@keyframes themeIconSpin {
+  0% {
+    opacity: 0;
+    transform: rotate(-90deg) scale(0.5);
+  }
+  100% {
+    opacity: 1;
+    transform: rotate(0deg) scale(1);
+  }
+}
+
+.theme-icon-animate {
+  animation: themeIconSpin 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
